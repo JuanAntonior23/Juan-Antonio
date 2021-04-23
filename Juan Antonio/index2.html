@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Examen Juan Antonio Rodriguez</title>
+    <meta charset="UTF-8">
+               <!-- conjunto de caracteres para español-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <!-- diseña responsivo-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <!-- compatibilidad con Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <script>
+        alert("Hola buenos dias y bienvenido a mi proyecto final")
+       </script>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+div {
+  width: 400px;
+  height: 400px;
+  background-image: url(https://sites.google.com/site/imagenesdecarrosgratis/_/rsrc/1421516636272/home/carros-deportivos-lamborghini-aventador-tron_aventador.jpg);
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 600px;
+  height: 600px;
+}
+        body{
+            background-color: aqua;
+
+
+        }
+</style>
+</head>
+<body>
+    
+        <h3 onclick="alert('hola soy yo')"></h3>
+        <h4 onclick="alert('Ya te he avisado antes')">No pinches aqui y pincha en mi blog</h4>
+        
+        <button type="button"><a href="https://juanantoniorodrigueztic.blogspot.com/">Mi blog</a></button>
+         
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
